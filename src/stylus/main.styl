@@ -1,0 +1,405 @@
+@import "reset.styl"
+
+@font-face 
+    font-family SegoeUI-Light
+    src url("../font/SegoeUl/SegoeUI-Light.ttf") format("truetype")
+    font-weight 100
+
+@font-face 
+    font-family AlteHaasGrotesk-Bold 
+    src url("../font/Alte_Haas_Grotesk_Bold/AlteHaasGroteskBold.ttf") format("truetype")
+    font-weight 600
+
+@font-face 
+    font-family UniversLTCYR-Light
+    src url("../font/universlt/UniversLTCYR-Light.woff") format("woff")
+    font-weight 300     
+    
+.body
+    width 1291px
+    margin 0 auto
+    overflow hidden
+
+
+.header
+    margin 0 0 0 0
+
+.header__photo
+    background-image url("../img/untitled.png")     
+    width 1280px
+    height 607px
+    margin 0 auto
+
+.header__cont
+    width 1282px
+    height 106px
+    margin 0 0 0 0
+    opacity 0.9
+    background-color #fff
+
+
+.header__logo
+    background-image url("../img/graff-pink.png")     
+    width 130px 
+    height 52px 
+    margin 38px 0 0 164px
+    position absolute
+
+.header__menu
+    margin 54px 0 0 0
+    float right
+
+.header__menu__item
+    opacity 0.95
+    font-family SegoeUI-Light
+    display inline-block
+    cursor pointer
+    font-size 17px
+    padding-right 35px
+    color rgb(17 16 16)   
+    
+
+.header__menu__cont
+    width 87px
+    height 27px
+    margin 0 176px 0 0
+    border-radius 4px
+    background-image url("../img/shape-1.png") 
+    background-position 16% 53%
+    background-repeat no-repeat
+    display inline-block
+    background-color #de6d6e
+
+.header__menu__login
+    padding-left 30px
+    padding-top 6px
+    font-family SegoeUI
+    font-size 17px
+    color #ffffff 
+    cursor pointer 
+
+.header__menu__item__active
+    position relative
+    display inline-block    
+
+.header__menu__login__window
+    margin 14px 0 0 68px
+    width 40px
+    color #fff 
+    cursor pointer
+    padding-bottom 3px
+    border-bottom 2px solid #fff    
+
+.text
+    margin 423px 0 0 308px
+    font-family AlteHaasGrotesk-bold
+    font-size 69px
+    color #ffffff
+    position absolute
+    text-transform uppercase
+    text-shadow 0 0 13px rgba(0, 0, 0, 0.22)
+
+.txt
+    font-size 25px
+    margin 3px 0 0 40px
+    text-transform none
+    text-align center
+    text-shadow 0 0 13px rgba(0, 0, 0, 0.22)
+    font-family UniversLTCYR-Light
+    color #ffffff
+
+.window__login
+    width 200px
+    height 200px 
+    background-color #E761B8
+    top 0
+    display none 
+    position absolute  
+
+.input
+    width 134px
+    height 10px
+    padding 9px
+    font-size 14px
+    margin 18px 0 0 21px
+
+.cross 
+    width 40px
+    height 40px
+    border-radius 40px
+    position absolute
+    z-index 1
+    bottom 3px
+    right 6px
+    cursor pointer
+
+.cross:before 
+    content '+'
+    color: #bf1664
+    position: absolute
+    z-index 2
+    transform rotate(45deg)
+    font-size 50px
+    line-height 1
+    top -5px
+    left 6px
+    transition all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85)
+
+.cross:after 
+    content ''
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    border-radius 100%
+    background #bf1664
+    z-index 1
+    transition all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85)
+    transform scale(0.01)
+
+.cross:hover:after 
+    transform scale(1)
+
+.cross:hover:before 
+    transform scale(0.8) rotate(45deg)
+    color #fff
+
+
+.shar
+    width 117px 
+    height 117px 
+    opacity 0.56
+    border-radius 50%
+    margin 282px 0 0 566px
+    position absolute
+    background-color #fff 
+
+    &.shar2
+        width 92px 
+        height 92px 
+        margin 247px 0 0 625px
+
+    &.shar3    
+        width 71px 
+        height 71px 
+        margin 305px 0 0 650px
+
+
+.section__with__info
+    margin 0 auto 0 
+    border 3px solid #9d91916e
+    width 1274px
+    height 467px 
+
+
+.section__text__title
+    margin 58px auto 0
+    text-align center
+    font-family UniversLTCYR-Light
+    font-size 35px
+    color #404040 
+
+.section__text__subtitle
+    width 827px
+    line-height 21px
+    margin 20px auto 0
+    font-family UniversLTCYR-Light
+    font-size 17px
+    text-align center
+    color #636363   
+
+.holder__for__circle
+    margin 84px auto
+    text-align center
+
+.circle
+    width 179px
+    height 179px
+    border-radius 50%
+    background-color #4eb9f4
+    margin 0 39px 0 30px
+    display inline-block 
+
+    &.circle2
+        background-color #6fc125
+
+    &.circle3
+        background-color #ff5649
+
+    &.circle4
+        background-color #e48f23  
+
+.inner__attachment
+    margin 0 0 0 0
+    position absolute
+
+.photo__inside__cricle
+    background-image url("../img/tickets.png") 
+    width 82px
+    height 82px     
+    margin 41px 0 0 44px  
+
+    &.camera
+        background-image url("../img/camera.png") 
+        width 80px
+        height 70px
+        margin 53px 0 0 51px 
+
+    &.beermug-cheers
+        background-image url("../img/beermug-cheers.png") 
+        width 68px
+        height 85px 
+        margin 39px 0 0 60px 
+
+    &.iphone
+        background-image url("../img/i-pad-potrait-landscape-2.png") 
+        width 76px
+        height 76px  
+        margin 48px 0 0 56px    
+
+
+.txt__inside              
+    margin 8px 0 0 49px
+    font-family UniversLTCYR-Light
+    font-size 17px
+    color #ffffff
+
+    &.mini
+        font-size 12px
+        line-height 15px 
+        width 129px
+        position absolute
+        margin -76px 0 0 23px
+
+    &.beer
+        margin 8px 0 0 44px
+        font-size 17px
+        color rgba(255, 255, 255, 0.26)
+
+.section__with__description
+    margin 0 0 86px 0
+
+.holder__for__description
+    margin 43px 0 0 201px
+
+.photo
+    background-image url("../img/layer-5.png")   
+    width 199px 
+    height 132px     
+    margin 0 0 78px 0       
+
+.inner__for__content
+    margin 0 0 0 0
+
+.box    
+    margin -207px 0 0 223px
+    position absolute    
+
+.txt__for__photo
+    line-height 27px
+    margin 0 0 0 0
+    font-family UniversLTCYR-Light
+    font-size 27px
+    color #404040  
+
+    &.big
+        width 734px
+        line-height 22px
+        margin 15px 0 0 2px
+        font-size 15px
+        color #8b8b8b   
+
+.footer
+    background-image url("../img/rectangle-1-copy-2.png")       
+    width 1278px
+    height 252px
+    margin-left 6px 
+
+.footer__box
+    margin 0 0 0 0
+
+
+.footer__menu
+    margin 0 0 0 194px
+    font-size 0px
+
+.footer__menu__item
+    line-height 21px
+    margin 26px 84px 0 0
+    font-family UniversLTCYR-Light
+    font-size 21px
+    color #aeaeae  
+    display inline-block 
+
+    &.two
+        margin 0 0 0 19px
+
+    &.three
+        margin 0 0 0 82px
+
+    &.four
+        margin 0 0 0 67px
+
+             
+
+
+.footer__cont__for__icon
+    margin 48px 118px 0 0
+    float right
+
+.footer__icon
+    width 52px
+    height 52px 
+    background-color #696b6a
+    border-radius 50%
+    background-image url("../img/shape-2.png")  
+    background-position 50% 50%
+    display inline-block
+    margin 0 0 0 19px
+    cursor pointer
+    background-repeat no-repeat   
+
+    &.twitter  
+        background-image url("../img/twitter.png")
+        background-position 57% 59%
+        
+
+    &.dribbble 
+        background-image url("../img/dribbble.png")
+        
+
+    &.share 
+        background-image url("../img/share.png")
+
+.copyright
+    background-image url("../img/copyright-2009-2013-cssauthor-com.png")   
+    width 260px
+    height 14px
+    margin 28px auto 0
+    text-align center    
+
+.footer__menu__item__choice
+    line-height 16px
+    margin 0 0 6px 0
+    font-family UniversLTCYR-Light
+    font-size 15px
+    color #8b8b8b    
+       
+.box__menu__item__choice
+    margin 21px 0 0 5px
+    
+.button
+    width 93px
+    height 30px 
+    background-color #d896d9 
+    border-radius 23%
+    margin 12px 0 0 52px   
+    font-family UniversLTCYR-Light
+    color #614242
+    border-color #ff00f787
+
+.button:active
+    background-color #BC72A2
+              
+
